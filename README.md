@@ -1,7 +1,7 @@
 
-# Prayer Times Dashboard
+# Prayer Times 
 
-This project is a simple yet effective web application that displays prayer times for selected cities. It is built using HTML, CSS, and JavaScript and utilizes the Aladhan API to fetch accurate prayer timings. The dashboard features a clean and modern user interface that is fully responsive across various devices.
+This project is a simple yet effective web application that displays prayer times for selected cities. It is built using HTML, CSS, and JavaScript and utilizes the Aladhan API to fetch accurate prayer timings.
 
 ## Table of Contents
 
