@@ -14,7 +14,7 @@ This project is a simple yet effective web application that displays prayer time
 - [Responsive Design](#responsive-design)
 - [Known Issues](#known-issues)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -131,6 +131,4 @@ The dashboard is designed to be fully responsive, ensuring a seamless user exper
 
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes. Contributions are always welcome!
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
