@@ -27,7 +27,7 @@ This project is a simple yet effective web application that displays prayer time
 - HTML
 - CSS
 - JavaScript
-- [Aladhan API](http://api.aladhan.com/v1/timingsByCity)
+- [Aladhan API](https://aladhan.com/)
 
 ## Setup and Installation
 
