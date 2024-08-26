@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="icon" href="./img/Sprite-0001.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="loader" id="loader">
+            <i class="fas fa-spinner fa-spin fa-3x "></i>
+        </div>
+        <div class="error" id="error">
+            <h1>City not found</h1>
+        </div>
+        <header>
+            <select class="city-select" id="city-select">
+
+            </select>
+        </header>
+        <main>
+            <h3 class="city" id="cityName">City</h3>
+            <p class="date" id="date">Date</p>
+            <div class="prayers">
+                <div class="prayer">
+                    <h3>Fajr</h3>
+                    <p class="time" id="fajr-time">5:00</p>
+                </div>
+                <div class="prayer">
+                    <h3>Dhuhr</h3>
+                    <p class="time" id="dhuhr-time">12:00</p>
+                </div>
+                <div class="prayer">
+                    <h3>Asr</h3>
+                    <p class="time" id="asr-time">15:00</p>
+                </div>
+                <div class="prayer">
+                    <h3>Maghrib</h3>
+                    <p class="time" id="maghrib-time">18:00</p>
+                </div>
+                <div class="prayer">
+                    <h3>Isha</h3>
+                    <p class="time" id="isha-time">20:00</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

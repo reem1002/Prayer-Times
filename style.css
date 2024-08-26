@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: url("./img/intrancebg1.png");
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.loader {
+  display: none;
+  margin-bottom: 20px;
+}
+.loader i {
+  font-size: 50px;
+  color: #313d53;
+  animation: spin 1s linear infinite;
+  margin: 3px;
+}
+
+.error {
+  display: none;
+  color: #ff0000;
+  margin-bottom: 20px;
+  background-color: rgba(120, 55, 27, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #313d53;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1f2533;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(65, 45, 47, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.city {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #313d53;
+}
+
+.date {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.prayers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.prayers.show {
+  opacity: 1;
+}
+
+.prayer {
+  margin: 0 15px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(229, 197, 150, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prayer:hover {
+  background-color: rgba(229, 197, 150, 1);
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.prayer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #313d53;
+}
+
+.prayer p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+select {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  appearance: none;
+  text-align-last: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+select:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+select option {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  input,
+  select {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  button {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .city {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .prayer {
+    padding: 8px;
+  }
+
+  .prayer h3 {
+    font-size: 1.3rem;
+  }
+
+  .prayer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  input,
+  select {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .city {
+    font-size: 1.6rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .prayers {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .prayer {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .prayer h3 {
+    font-size: 1.2rem;
+  }
+
+  .prayer p {
+    font-size: 1rem;
+  }
+}
