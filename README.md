@@ -127,8 +127,4 @@ The dashboard is designed to be fully responsive, ensuring a seamless user exper
 - The application relies on the Aladhan API. If the API is down or there are connectivity issues, the prayer times will not be fetched, and an error message will be displayed.
 - The list of cities is currently hardcoded. Future improvements could include dynamically fetching available cities from an API.
 
-## Contributing
-
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes. Contributions are always welcome!
-
 
